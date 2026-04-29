@@ -1,3 +1,18 @@
+  </line>
+  <!-- Terminal-style status line -->
+  <text x="600" y="230" font-family="'Courier New', monospace" font-size="14" fill="#3fb950" text-anchor="middle" opacity="0.7">
+    ~/malik-mb $ status --online
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </text>
+  <!-- Corner decorations -->
+  <polyline points="10,30 10,10 30,10" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+  <polyline points="1170,10 1190,10 1190,30" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+  <polyline points="10,270 10,290 30,290" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+  <polyline points="1170,290 1190,290 1190,270" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+  <!-- Border glow -->
+  <rect x="5" y="5" width="1190" height="290" rx="5" fill="none" stroke="url(#textGrad)" stroke-width="1" opacity="0.15"/>
+</svg>
+
 # 💫 About Me:
 Hi, I'm Malik 👋<br><br>I’m a computer science student specializing in networks and cybersecurity.  <br>Here you will find my projects, experiments, and learning progress in development and cybersecurity.
 
