@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff">
+        <animate attributeName="stop-color" values="#58a6ff;#bc8cff;#f778ba;#58a6ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#bc8cff">
+        <animate attributeName="stop-color" values="#bc8cff;#f778ba;#58a6ff;#bc8cff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#f778ba">
+        <animate attributeName="stop-color" values="#f778ba;#58a6ff;#bc8cff;#f778ba" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#bc8cff;stop-opacity:1">
+        <animate attributeName="offset" values="0.1;0.5;0.9;0.5;0.1" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#f778ba;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <g opacity="0.07">
+    <line x1="0" y1="50" x2="1200" y2="50" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="1200" y2="150" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="1200" y2="250" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="900" y1="0" x2="900" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="1000" y1="0" x2="1000" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="1100" y1="0" x2="1100" y2="300" stroke="#58a6ff" stroke-width="0.5"/>
+  </g>
+
+  <circle cx="100" cy="50" r="2" fill="#58a6ff" opacity="0.6" filter="url(#softGlow)">
+    <animate attributeName="cy" values="50;250;50" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="100;150;100" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="200" r="1.5" fill="#bc8cff" opacity="0.5" filter="url(#softGlow)">
+    <animate attributeName="cy" values="200;30;200" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="300;260;300" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="80" r="2.5" fill="#f778ba" opacity="0.4" filter="url(#softGlow)">
+    <animate attributeName="cy" values="80;220;80" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="500;540;500" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="260" r="1.8" fill="#58a6ff" opacity="0.5" filter="url(#softGlow)">
+    <animate attributeName="cy" values="260;40;260" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="750;790;750" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="950" cy="120" r="2" fill="#bc8cff" opacity="0.6" filter="url(#softGlow)">
+    <animate attributeName="cy" values="120;270;120" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="950;910;950" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="180" r="1.5" fill="#f778ba" opacity="0.4" filter="url(#softGlow)">
+    <animate attributeName="cy" values="180;20;180" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="1100;1060;1100" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="150" r="3" fill="#58a6ff" opacity="0.3" filter="url(#softGlow)">
+    <animate attributeName="cy" values="150;50;250;150" dur="15s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.1;0.3" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="70" r="2.5" fill="#f778ba" opacity="0.35" filter="url(#softGlow)">
+    <animate attributeName="cy" values="70;230;70" dur="13s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="850;820;880;850" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <g opacity="0.08" transform="translate(80, 60)">
+    <polygon points="30,0 60,17 60,52 30,69 0,52 0,17" fill="none" stroke="#58a6ff" stroke-width="1">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  <g opacity="0.06" transform="translate(1050, 200)">
+    <polygon points="25,0 50,14 50,43 25,57 0,43 0,14" fill="none" stroke="#bc8cff" stroke-width="1">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="5s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  <g opacity="0.05" transform="translate(650, 20)">
+    <polygon points="20,0 40,11 40,34 20,46 0,34 0,11" fill="none" stroke="#f778ba" stroke-width="1">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="6s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  <g opacity="0.07" transform="translate(350, 230)">
+    <polygon points="22,0 44,13 44,38 22,51 0,38 0,13" fill="none" stroke="#58a6ff" stroke-width="1">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.5s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="2" fill="url(#lineGrad)" opacity="0.3">
+    <animate attributeName="y" values="-2;302" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="600" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="58" font-weight="700" fill="url(#textGrad)" text-anchor="middle" filter="url(#glow)" letter-spacing="3">
+    Malik Mobarek
+  </text>
+
+  <text x="600" y="170" font-family="'Courier New', monospace" font-size="18" fill="#8b949e" text-anchor="middle" letter-spacing="2">
+    &lt; Computer Science  |  Networks  |  Cybersecurity /&gt;
+  </text>
+
+  <line x1="320" y1="190" x2="880" y2="190" stroke="url(#textGrad)" stroke-width="2" opacity="0.5">
+    <animate attributeName="x1" values="500;320;500" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="700;880;700" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <text x="600" y="230" font-family="'Courier New', monospace" font-size="14" fill="#3fb950" text-anchor="middle" opacity="0.7">
+    ~/malik-mb $ status --online
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <polyline points="10,30 10,10 30,10" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+  <polyline points="1170,10 1190,10 1190,30" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+  <polyline points="10,270 10,290 30,290" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+  <polyline points="1170,290 1190,290 1190,270" fill="none" stroke="#58a6ff" stroke-width="2" opacity="0.4"/>
+
+  <rect x="5" y="5" width="1190" height="290" rx="5" fill="none" stroke="url(#textGrad)" stroke-width="1" opacity="0.15"/>
+</svg>
